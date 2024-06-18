@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/abu_putih">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Cari Nama"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:textColorHint="@android:color/darker_gray"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@android:drawable/ic_search_category_default"
+            android:drawablePadding="8dp"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"/>
+
+        <!-- Spacer untuk menyisipkan tombol search ke kanan -->
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/white"
+            android:padding="8dp"
+            android:text="Cancel"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/app_name"
+        tools:ignore="ContentDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_syahrani"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/syahrani" />
+
+                <ImageView
+                    android:id="@+id/iv_alam"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/alam" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_syahrani"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Syahrani"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_alam"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Syaiful Alam"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_febri"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/febri" />
+
+                <ImageView
+                    android:id="@+id/iv_david"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/david" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_febri"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Febriannur Effendy"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_david"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="David Ramadhan"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_hafid"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/hafid" />
+
+                <ImageView
+                    android:id="@+id/iv_tio"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="12dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:padding="10dp"
+                    android:src="@drawable/tio" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_hafid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Hafid Try Siswanto"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/tv_tio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Prasetio Lukito"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:paddingBottom="8dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
